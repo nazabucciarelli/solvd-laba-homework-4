@@ -5,6 +5,7 @@ import interfaces.IEat;
 import interfaces.ISleep;
 
 public abstract class Animal implements IBreath, IEat, ISleep {
+    private static int quantity = 0;
     private String name;
     private double weight;
     private Gender gender;
@@ -18,6 +19,11 @@ public abstract class Animal implements IBreath, IEat, ISleep {
         this.gender = gender;
         this.habitat = habitat;
         this.feeding = feeding;
+        quantity += 1;
+    }
+
+    public static int getQuantityOfAnimals(){
+        return quantity;
     }
 
     public String getName() {

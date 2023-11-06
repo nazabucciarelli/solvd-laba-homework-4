@@ -1,7 +1,8 @@
 package models;
 
 public class Amphibian extends Animal{
-    public Amphibian(String name, double weight, Gender gender, Habitat habitat, Feeding feeding) {
+    public Amphibian(String name, double weight, Gender gender, Habitat habitat,
+                     Feeding feeding) {
         super(name, weight, gender, habitat, feeding);
     }
 

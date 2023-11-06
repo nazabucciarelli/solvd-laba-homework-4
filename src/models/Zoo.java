@@ -3,9 +3,15 @@ package models;
 import java.util.Arrays;
 
 public class Zoo {
+    private static final int CUSTOMERS_CAPACITY = 50;
     private String name;
     private AnimalRoom[] animalRooms;
     private Department[] departments;
+
+    static{
+        System.out.println("The capacity of the zoo is of " +
+                            CUSTOMERS_CAPACITY + " customers");
+    }
 
     public Zoo(String name, AnimalRoom[] animalRooms, Department[] departments){
         this.name = name;

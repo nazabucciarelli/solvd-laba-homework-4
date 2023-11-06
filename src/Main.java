@@ -1,3 +1,4 @@
+import interfaces.ISleep;
 import models.*;
 
 public class Main {
@@ -63,9 +64,9 @@ public class Main {
         // Instantiating customers of the zoo
 
         Customer louis = new Customer("3942305","Louis","Smith",male,argentina,
-                                      "358472034",2);
+                                      "358472034",2,"Taxi Driver");
         Customer pablo = new Customer("493485321","Pablo","Gerardi",male,
-                                      mexico, "3584293109",7);
+                                      mexico, "3584293109",7,"Programmer");
 
         // Applying the concept of polymorphism
         Person[] persons = {vet, manager, securityGuard, louis, pablo};
@@ -73,5 +74,14 @@ public class Main {
         for(Person p: persons){
             p.walk();
         }
+
+        ISleep[] sleepers = {pablo, louis, parrot, pigeon, securityGuard};
+
+        for (ISleep sleeper: sleepers){
+            sleeper.sleep();
+        }
+
+        System.out.println("There are " + Animal.getQuantityOfAnimals()
+                            + " Animals");
     }
 }

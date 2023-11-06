@@ -70,7 +70,6 @@ public class Employee extends Person implements IWork {
                 '}';
     }
 
-
     @Override
     public void work() {
         System.out.println("I am an employee from the zoo!");
