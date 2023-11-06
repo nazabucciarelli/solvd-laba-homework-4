@@ -1,17 +1,27 @@
-# 3rd Homework of Java Test Automation Course - Solvd Laba
-This repository stores the 3rd homework given by our mentor in the Java Test 
+# 4th Homework of Java Test Automation Course - Solvd Laba
+This repository stores the 4rd homework given by our mentor in the Java Test 
 Automation Course at Solvd Laba. It consists in a modification of the last 
-homework (2nd), applying polymorphism concepts, protected access modifier and
-overriding Object methods as toString(), hashCode() and equals().
+homework (3rd), adding 5 interfaces to the existing hierarchy of classes, 
+applying polymorphism with an interface and abstract class, and making use 
+of 'final' keyword in variables, methods and classes and the 'static' 
+keyword in its default static block, methods and variables.
 
 ## Explanation
 
-To accomplish the requirements of the homework, I've changed the attributes
-from class Person to protected, so they are accessible only from Employee
-and Customer classes. I've applied polymorphism adding Customers and
-Employees in a Person array and adding the walk() abstract method in Person
-in order to make that child classes override it. Finally, I've overridden 
-toString(), hashCode() and equals() methods in each non-abstract class.
+To accomplish the requirements of the homework, I've created 5 interfaces
+to use in Animal and Person abstract classes, so their child classes
+like Bird for Animal or Employee for Person must implement a behavior 
+for each interface. The polymorphism concept with abstract class was 
+achieved by declaring a Person[] array and inserting in it Employees and
+Customers, with interfaces it was achieved by declaring an ISleep[] array 
+and inserting in it instances of child classes from Animal and Person.
+Then, I've used the 'final' keyword in the Country class, so it cannot 
+be extended, in a field of Zoo named CUSTOMERS_CAPACITY, so it cannot be
+changed, and in some methods of Person abstract class, so they cannot be
+overridden. Finally, I've created a static block in Zoo class, that means
+that it will be executed once, when the class be called for the first time,
+a static variable in Animal class to know the amount of instances of it and 
+a static method to get that field.
 
 ## Technologies
 

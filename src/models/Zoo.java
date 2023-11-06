@@ -3,12 +3,12 @@ package models;
 import java.util.Arrays;
 
 public class Zoo {
-    private static final int CUSTOMERS_CAPACITY = 50;
+    private static final int CUSTOMERS_CAPACITY = 50; // Using final var.
     private String name;
     private AnimalRoom[] animalRooms;
     private Department[] departments;
 
-    static{
+    static{ // Using a static block
         System.out.println("The capacity of the zoo is of " +
                             CUSTOMERS_CAPACITY + " customers");
     }

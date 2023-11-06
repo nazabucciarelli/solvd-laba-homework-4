@@ -1,6 +1,6 @@
 package models;
 
-public final class Country {
+public final class Country { // Using final class
     private String name;
 
     public Country(String name){

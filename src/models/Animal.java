@@ -5,7 +5,7 @@ import interfaces.IEat;
 import interfaces.ISleep;
 
 public abstract class Animal implements IBreath, IEat, ISleep {
-    private static int quantity = 0;
+    private static int quantity = 0; // Using a static variable
     private String name;
     private double weight;
     private Gender gender;
@@ -22,6 +22,7 @@ public abstract class Animal implements IBreath, IEat, ISleep {
         quantity += 1;
     }
 
+    //Using static method
     public static int getQuantityOfAnimals(){
         return quantity;
     }
