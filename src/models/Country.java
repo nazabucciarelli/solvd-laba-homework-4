@@ -36,6 +36,4 @@ public final class Country { // Using final class
                 "name='" + name + '\'' +
                 '}';
     }
-
-
 }

@@ -9,8 +9,8 @@ public class Zoo {
     private Department[] departments;
 
     static{ // Using a static block
-        System.out.println("The capacity of the zoo is of " +
-                            CUSTOMERS_CAPACITY + " customers");
+        System.out.println("The capacity of the zoo is of "
+                            + CUSTOMERS_CAPACITY + " customers");
     }
 
     public Zoo(String name, AnimalRoom[] animalRooms, Department[] departments){

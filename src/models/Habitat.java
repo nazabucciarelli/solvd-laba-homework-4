@@ -3,7 +3,7 @@ package models;
 public class Habitat {
     private String name;
 
-    public Habitat(String name){
+    public Habitat(String name) {
         this.name = name;
     }
 

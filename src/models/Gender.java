@@ -3,7 +3,7 @@ package models;
 public class Gender {
     private String genderName;
 
-    public Gender(String genderName){
+    public Gender(String genderName) {
         this.genderName = genderName;
     }
 

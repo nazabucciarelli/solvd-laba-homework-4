@@ -31,8 +31,8 @@ public class Employee extends Person implements IWork {
 
     @Override
     public void walk() {
-        System.out.println("I can walk down the streets from the Zoo and " +
-                "also enter to only-employees rooms.");
+        System.out.println("I can walk down the streets from the Zoo and "
+                            +  "also enter to only-employees rooms.");
     }
 
     @Override

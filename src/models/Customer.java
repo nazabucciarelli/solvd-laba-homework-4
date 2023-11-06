@@ -5,7 +5,7 @@ import interfaces.IWork;
 public class Customer extends Person implements IWork {
     private String phoneNumber;
     private int timesVisitingZoo;
-    public String work;
+    private String work;
 
     public Customer(String id, String firstName, String lastName, Gender gender,
                     Country country, String phoneNumber, int timesVisitingZoo,
@@ -30,6 +30,14 @@ public class Customer extends Person implements IWork {
 
     public void setTimesVisitingZoo(int timesVisitingZoo) {
         this.timesVisitingZoo = timesVisitingZoo;
+    }
+
+    public String getWork() {
+        return work;
+    }
+
+    public void setWork(String work) {
+        this.work = work;
     }
 
     @Override

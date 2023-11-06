@@ -65,15 +65,15 @@ public abstract class Person implements ISleep, IEat, IBreath {
 
     abstract public void walk(); // Defining an abstract method
 
-    public final void sleep(){ // Using final methods
+    public final void sleep() { // Using final methods
         System.out.println("I sleep in a bed, during the night!");
     };
 
-    public final void eat(){
+    public final void eat() {
         System.out.println("I can eat meats, vegetables and fruits!");
     };
 
-    public final void breath(){
+    public final void breath() {
         System.out.println("I breath oxygen from the air with my lungs!");
     };
 }

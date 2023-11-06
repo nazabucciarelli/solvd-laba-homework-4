@@ -6,7 +6,7 @@ public class Department {
     private String name;
     private Employee[] employees;
 
-    public Department(String name, Employee[] employees){
+    public Department(String name, Employee[] employees) {
         this.name = name;
         this.employees = employees;
     }

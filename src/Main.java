@@ -71,13 +71,13 @@ public class Main {
         // Applying the concept of polymorphism
         Person[] persons = {vet, manager, securityGuard, louis, pablo};
 
-        for(Person p: persons){
+        for (Person p: persons) {
             p.walk();
         }
 
         ISleep[] sleepers = {pablo, louis, parrot, pigeon, securityGuard};
 
-        for (ISleep sleeper: sleepers){
+        for (ISleep sleeper: sleepers) {
             sleeper.sleep();
         }
 

@@ -3,7 +3,7 @@ package models;
 public class Feeding {
     private String name;
 
-    public Feeding(String name){
+    public Feeding(String name) {
         this.name = name;
     }
 
